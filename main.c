@@ -87,7 +87,9 @@ int main(void)
     TIMER_DOWN();
     close(fd_2);
         
-    //libaio test
+    /*
+     * libaio test
+     * */
     int fd_3 = open("test3.txt", O_CREAT | O_RDWR, NOR_MODE);
     assert(fd_3 != -1);
     io_context_t ctx;
